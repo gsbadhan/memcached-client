@@ -11,6 +11,7 @@
 		<junit>4.12</junit>
 		<guava.version>21.0</guava.version>
 		<sl4j.version>1.7.25</sl4j.version>
+		<gson>2.8.2</gson>
 		<spymemcached>2.12.3</spymemcached>
 	</properties>
 
@@ -23,6 +24,11 @@
 			<version>${spymemcached}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.slf4j</groupId>

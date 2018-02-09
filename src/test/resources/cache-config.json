@@ -1,0 +1,7 @@
+{
+	user: "test",
+	password:"test",
+	servers: "127.0.0.1:11211",
+	auth.list: "PLAIN",
+	auth.enable: false
+}
