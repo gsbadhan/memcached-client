@@ -13,6 +13,7 @@
 		<sl4j.version>1.7.25</sl4j.version>
 		<gson>2.8.2</gson>
 		<spymemcached>2.12.3</spymemcached>
+		<jdk>1.8</jdk>
 	</properties>
 
 

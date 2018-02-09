@@ -8,7 +8,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import net.spy.memcached.MemcachedClient;
-import net.spy.memcached.internal.OperationFuture;
 
 public class CacheClientFactoryImplTest {
 	private MemcachedClient cacheClient;
@@ -25,11 +24,10 @@ public class CacheClientFactoryImplTest {
 
 	@Test
 	public void testSetAndGet() throws Exception {
-		String key = "1001";
-		String value = "gurpreet";
+		String key = "1002";
+		String value = "cache test";
 		int ttl = 60000;
-		OperationFuture<Boolean> ft = cacheClient.add(key, ttl, value);
-		ft.get();
+		cacheClient.add(key, ttl, value);
 		Object out = cacheClient.get(key);
 		assertNotNull(out);
 		assertTrue(value.equals(out.toString()));
